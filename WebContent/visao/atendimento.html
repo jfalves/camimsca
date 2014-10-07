@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Camim SCA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!-- (en) Add your meta data here -->
+
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<!--[if lte IE 7]>
+			<link href="css/patches/patch_2col_left_13.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<script type="text/javascript" src="js/controle/banner.js"></script>
+		<script type="text/javascript" src="js/controle/principal.js"></script>
+		<script type="text/javascript" src="js/controle/atendimento.js"></script>
+   </head>
+<body>
+						<form id="atendimento" method="post">
+							<!-- Dados de agendamento -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+
+								<legend>Atendimento</legend>
+
+								<div class="grid-4-12">
+									<label>Matrícula do Médico<em class="form-req">*</em></label>
+									<input name="matriculaMedico" maxlength="6" type="text" size="20" />
+								</div>
+
+								<div class="grid-12-12 center">
+									<input name="acao" type="submit" value="listaAgenda" />
+									<input name="acao" type="reset"  value="Limpar" />									
+								</div>
+							</fieldset>
+
+							<!-- Resultado Pesquisa -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+
+                            	<div id="resultado" class="center">
+									<table id="list" class="scroll" cellpadding="0" cellspacing="0"></table>
+									<div id="pager" class="scroll" style="text-align:center;"></div>
+								</div>
+							</fieldset>
+						</form>
+						
+						<!-- caixa de dialogo #dialog -->
+						<div id="dialog" title="Informacao"></div>
+						<div id="dialog1" title="Informacao"></div>
+
+						<!-- Controle de status -->
+						<form id="prontuario" method="post">
+                        	<fieldset class="ui-widget-content ui-corner-all">
+
+								<div class="grid-12-12 center">
+                        			<input name="acao" type="submit" value="avancaConsulta" />
+                        			<select id="listaStatus">
+									</select>
+                        		</div>
+                        	</fieldset>
+						
+                        	<!-- TABS #tabs -->
+                        	<div id="tabs" class="ui-corner-all">
+
+								<ul>
+									<li>
+										<a href="#fragment-1" class="ui-corner-all"><span>Prontuario</span></a>
+									</li>
+									<li>
+										<a href="#fragment-2" class="ui-corner-all"><span>Historico Clinico</span></a>
+									</li>
+								</ul>
+								
+								<div id="fragment-1">
+		
+									<div class="grid-6-12">
+										<label>Prontuario<em class="form-req">*</em></label>
+										<textarea name="prontuario" cols="35"  class="ignore"></textarea>
+									</div>
+	
+									<div class="grid-6-12">
+										<label>Receituario</label>
+										<textarea name="receituario" cols="35"></textarea>
+									</div>
+								
+								</div>
+							
+								<div id="fragment-2">
+									<p>This is tab two.</p>
+								</div>
+							</div>
+						</form>
+</body>
+</html>

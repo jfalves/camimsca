@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* importa o layout base */
+@import url(screen/base.css);
+
+/* import o UI do jquery */
+@import url(screen/jquery-ui.css);
+@import url(screen/jqgrid-ui.css);
+
+/* import o layout da tela */
+@import url(screen/basemod.css);
+@import url(screen/content.css);
+
+/* import o layout do formulario */
+@import url(screen/form-style.css);
+@import url(screen/form-structure.css);
+
+/* import o layout do menu */
+@import url(screen/menu.css);
+
+/* importa o layout de impress�o */
+@import url(print/print.css);

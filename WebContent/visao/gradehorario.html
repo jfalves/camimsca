@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Camim SCA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	  
+		<!-- (en) Add your meta data here -->
+      
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<!--[if lte IE 7]>
+			<link href="css/patches/patch_2col_left_13.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<script type="text/javascript" src="js/controle/banner.js"></script>
+		<script type="text/javascript" src="js/controle/principal.js"></script>	
+		<script type="text/javascript" src="js/controle/cliente.js"></script>
+	</head>
+<body>
+						<form id="cliente" method="post">						
+
+							
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<legend class="ui-widget-header">Alocar Médico a Grade de Horário</legend>
+								<div class="grid-4-12">
+									<label>Matrícula do Médico <em class="form-req">*</em></label>
+									<input name="matricula" maxlength="6" type="text" size="20" />
+								</div>
+								
+                                <div class="grid-4-12">
+									<label>Horário de Início <em class="form-req">*</em></label>
+                                    <label><em>hh:mm</em></label>
+									<input name="horarioInicio" maxlength="6" type="text" size="20" />
+								</div>
+                                
+                                <div class="grid-4-12">
+									<label>Horário de Término <em class="form-req">*</em></label>
+                                    <label><em>hh:mm</em></label>
+									<input name="horarioFim" maxlength="6" type="text" size="20" />
+								</div>
+                                
+                            <div class="grid-4-12">
+									<label>Dia da Semana <em class="form-req">*</em></label>
+							  <label>
+									<select name="diaSemana" id="select">
+									  <option>Selecione o dia da semana</option>
+									  <option>Segunda-Feira</option>
+									  <option>Terça-Feira</option>
+									  <option>Quarta-Feira</option>
+									  <option>Quinta-Feira</option>
+									  <option>Sexta-Feira</option>
+									  <option>Sábado</option>
+							        </select>
+							  </label>
+							  </div>
+                              
+                              <div class="grid-4-12">
+									<label>Mês <em class="form-req">*</em></label>
+							  <label>
+									<select name="mes" id="select2">
+									  <option>Selecione o mês</option>
+									  <option>Janeiro</option>
+									  <option>Fevereiro</option>
+									  <option>Março</option>
+									  <option>Abril</option>
+									  <option>Maio</option>
+									  <option>Junho</option>
+                                      <option>Julho</option>
+                                      <option>Agosto</option>
+                                      <option>Setembro</option>
+                                      <option>Outubro</option>
+                                      <option>Novembro</option>
+                                      <option>Dezembro</option>
+							        </select>
+							  </label>
+							  </div>
+                              
+                              <div class="grid-4-12">
+									<label>Duração da Consulta <em class="form-req">*</em></label>
+                                    <label><em>hh:mm</em></label>
+									<input name="duracaoConsulta" maxlength="6" type="text" size="20" />
+								</div>
+                                
+							</fieldset>
+                                                     
+                            <!-- Botões -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+                           		<div class="center">
+									<input name="acao" type="submit" value="Cadastrar" />
+									<input name="acao" type="submit" value="Alterar" />
+                                	<input name="acao" type="submit" value="Excluir" />
+                                	<input name="acao" type="reset"  value="Limpar" />
+								</div>
+							</fieldset>
+							
+							<!-- caixa de dialogo #dialog -->
+							<div id="dialog" title="Informacao"></div> 							
+						</form>			
+			
+</body>
+</html>

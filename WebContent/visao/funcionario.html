@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Camim SCA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	  
+		<!-- (en) Add your meta data here -->
+      
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<!--[if lte IE 7]>
+			<link href="css/patches/patch_2col_left_13.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<script type="text/javascript" src="js/controle/banner.js"></script>
+		<script type="text/javascript" src="js/controle/principal.js"></script>	
+		<script type="text/javascript" src="js/controle/cliente.js"></script>
+	</head>
+<body>
+						<form id="cliente" method="post">						
+
+							<!-- Dados de usuário -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<legend class="ui-widget-header">Funcionário</legend>
+								<div class="grid-4-12">
+									<label>Matrícula <em class="form-req">*</em></label>
+									<input name="matricula" maxlength="6" type="text" size="20" />
+								</div>
+								<div class="grid-4-12">
+									<label>Senha <em class="form-req">*</em></label>							
+									<input id="senha" name="senha" maxlength="8" type="password" size="15" />									
+								</div>
+                                <div class="grid-4-12">
+									<label>Confirma Senha <em class="form-req">*</em></label>							
+									<input name="csenha" maxlength="8" type="password" size="15" />									
+								</div>
+							</fieldset>
+                            
+                            <!-- Informarções Pessoais -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<legend class="ui-widget-header">Informarções Pessoais</legend>
+								<div class="grid-4-12">
+									<label>Nome <em class="form-req">*</em></label>
+									<input name="nome" type="text" maxlength="45" size="20" />
+								</div>
+                                <div class="grid-4-12">
+									<label>CPF <em class="form-req">*</em></label>
+									<label><em>somente numeros</em></label>
+									<input name="cpf" maxlength="11" type="text" size="20" />
+								</div>
+								<div class="grid-4-12">
+									<label>RG <em class="form-req">*</em></label>
+									<label><em>somente numeros</em></label>									
+									<input name="rg" maxlength="9" type="text" size="15" />									
+								</div>
+                                <div class="grid-4-12">
+									<label>Data de Nascimento<em class="form-req">*</em></label>
+									<label><em>dd/mm/aaaa</em></label>	
+									<input name="dataNascimento" class="data" maxlength="10" type="text" size="12" />
+								</div>
+                                <div class="grid-4-12">
+									<label>Telefone Residencial</label>
+									<label><em>somente numeros e com DDD</em></label>								
+									<input name="telefoneResidencial" maxlength="10" type="text" size="15" />									
+								</div>
+                                <div class="grid-4-12">
+									<label>Telefone Celular</label>			
+									<label><em>somente numeros e com DDD</em></label>					
+									<input name="telefoneCelular" maxlength="10" type="text" size="15" />									
+								</div>	
+							</fieldset>
+                            
+                            <!-- Dados de Endereço -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<legend class="ui-widget-header">Endereço</legend>
+								<div class="grid-4-12">
+									<label>Logradouro <em class="form-req">*</em></label>							
+									<input name="logradouro" type="text" maxlength="100" size="25" />									
+								</div>
+								 <div class="grid-4-12">
+									<label>Complemento</label>							
+									<input name="complemento" type="text" maxlength="45" size="20" />									
+								</div>
+								<div class="grid-4-12">
+									<label>Bairro <em class="form-req">*</em></label>							
+									<input name="bairro" type="text" maxlength="30" size="15" />									
+								</div>								
+								<div class="grid-4-12">								
+									<label>CEP <em class="form-req">*</em></label>
+									<input name="cep" type="text" maxlength=8 maxlength="10" size="12" />
+								</div>
+                                <div class="grid-4-12">
+									<label>Cidade <em class="form-req">*</em></label>							
+									<input name="cidade" type="text" maxlength="45" size="15" />						
+								</div>
+							</fieldset>
+								
+                            <!-- Dados do Funcionário -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<legend class="ui-widget-header">Informações Profissionais</legend>
+		
+								<div id="funcao" class="grid-4-12">
+									<label>Função  <em class="form-req">*</em></label>
+                                    <label>
+								<select name="funcao" id="select">
+								  <option>Escolha uma função</option>
+								  <option>Médico</option>
+								  <option>Atendente</option>
+							    </select>
+								</label>	
+								</div>
+                                
+                            <div id="ctps" class="grid-4-12">
+								<label>CTPS  <em class="form-req">*</em></label>
+                               <label>
+                                    <input type="text" name="ctps" id="textfield" />
+                               </label>	
+							</div>
+                            
+                            <div id="dataAdmissao" class="grid-4-12">
+								<label>Data de Admissão  <em class="form-req">*</em></label>
+                                <label><em>dd/mm/aaaa</em></label>
+                              <label>
+                                <input type="text" name="dataAdmissao" id="textfield2" class="data" />
+                              </label>	
+							</div>
+                            
+                            <div id="dataDemissao" class="grid-4-12">
+								<label>Data de Demissão</label>
+                                <label><em>dd/mm/aaaa</em></label>
+                              <label>
+                                <input type="text" name="dataDemissao" id="textfield3" class="data" />
+                              </label>	
+							</div>
+                            
+                            <div id="status" class="grid-4-12">
+									<label>Status  <em class="form-req">*</em></label>
+                                    <label>
+								<select name="status" id="select">
+								  <option>Selecione o status</option>
+								  <option>Ativo</option>
+								  <option>Férias</option>
+                                  <option>Afastado</option>
+                                  <option>Demitido</option>
+							    </select>
+								</label>	
+								</div>
+                            								
+						  </fieldset>								
+								
+                            <!-- Botões -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+                           		<div class="center">
+									<input name="acao" type="submit" value="Cadastrar" />
+									<input name="acao" type="submit" value="Consultar" />
+                                	<input name="acao" type="submit" value="Alterar" />
+                                	<input name="acao" type="submit" value="Excluir" />
+                                	<input name="acao" type="reset"  value="Limpar" />
+								</div>
+							</fieldset>
+							
+							<!-- caixa de dialogo #dialog -->
+							<div id="dialog" title="Informacao"></div> 							
+						</form>			
+			
+</body>
+</html>

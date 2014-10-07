@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Camim SCA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	  
+		<!-- (en) Add your meta data here -->
+      
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<!--[if lte IE 7]>
+			<link href="css/patches/patch_2col_left_13.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+	  
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/plugin/jquery.jqgrid.js"></script>
+		<script type="text/javascript" src="js/plugin/jquery.ui.js"></script>
+		<script type="text/javascript" src="js/plugin/jquery.validate.js"></script>
+				
+		<script type="text/javascript" src="js/plugin/i18n/jquery-ui-i18n.js"></script>
+		<script type="text/javascript" src="js/plugin/i18n/jqgrid-ui-i18n.js"></script>				
+		
+		<script type="text/javascript" src="js/plugin/grid/grid.base.js"></script>
+		<script type="text/javascript" src="js/plugin/grid/grid.fluid.js"></script>
+		<script type="text/javascript" src="js/plugin/grid/grid.jqueryui.js"></script>
+		
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.accordion.js"></script>
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.button.js"></script>
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.datepicker.js"></script>
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.dialog.js"></script>
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.jqgrid.js"></script>
+		
+		<script type="text/javascript" src="js/controle/banner.js"></script>
+		<script type="text/javascript" src="js/controle/principal.js"></script>
+		<script type="text/javascript" src="js/controle/pagamento.js"></script>
+   </head>
+<body>
+	<div class="page_margins">
+		<div class="page">
+			<div id="header" role="banner">
+				<img class="image" src="img/banner.png" alt="Camim SCA" />
+			</div>
+			
+			<!-- begin: main toolbar #toolbar -->
+			<div id="toolbar" class="ui-corner-top" role="toolbar">
+				statusbar
+			</div>
+			<!-- end: main toolbar -->
+			
+			<!-- begin: main content area #main -->
+			<div id="main">
+				<!-- begin: #col1 - first float column -->
+				<div id="col1" role="menu">
+					<div id="col1_content" class="clearfix">
+						<ul class="menu">
+							<li>
+								<a class="head" href="index.html">Cadastrar</a>
+								<ul>
+									<li><a href="cliente.html">Cliente</a></li>
+									<li><a href="dependente.html">Dependente</a></li>
+									<li><a href="especialidade.html">Especialidade</a></li>
+									<li><a href="funcionario.html">Funcionário</a></li>
+									<li><a href="gradehorario.html">Grade de Horário</a></li>
+									<li><a href="planosaude.html">Plano de Saúde</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a class="head" href="#">Visualizar</a>
+								<ul>
+									<li><a href="clinico.html">Histórico Clínico</a></li>
+									<li><a href="financeiro.html">Histórico Financeiro</a></li>
+									<li><a href="prontuario.html">Prontuário</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a class="head" href="#">Registrar</a>
+								<ul>
+									<li><a href="agendamento.html">Agendamento</a></li>
+									<li><a href="atendimento.html">Atendimento</a></li>
+									<li><a href="pagamento.html">Pagamento</a></li>
+									<li><a href="registrarprontuario">Prontuário</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a class="head" href="#">Relatório</a>
+								<ul>
+									<li><a href="#">Atendimento de médico por período</a></li>
+									<li><a href="#">Cliente Inadimplente</a></li>
+									<li><a href="#">Especialidade com maior atendimento</a></li>
+									<li><a href="#">Grade de horário do médico</a></li>
+									<li><a href="#">Idade de cliente por especialidade</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end: #col1 -->
+				
+				<!-- begin: #col2 static column -->
+				<div id="col2" role="main">
+					<div id="col2_content" class="clearfix">		
+						<form id="pagamento" method="post">
+						
+							<!-- Dados de pagamento -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<legend>Pagamento</legend>
+                                <div class="grid-4-12">
+									<label>Matrícula do Cliente <em class="form-req">*</em></label>
+									<input name="matriculaCliente" maxlength="6" type="text" size="20" />
+						 		</div>
+						 		
+						 		<div class="grid-4-12">
+									<label>Matricula do funcionário <em class="form-req">*</em></label>
+									<input name="matriculaFuncionario" maxlength="6" type="text" size="12" />
+								</div>
+								
+								<div class="grid-4-12">
+									<label>Forma de Pagamento <em class="form-req">*</em></label>
+									<select id="listaFormaPagamento" name="listaFormaPagamento">
+										<option value="0" selected="selected">Selecione</option>
+									</select>
+								</div>
+								
+								<!-- Botões -->						 		
+						 		<div class="grid-12-12 center">	
+									<input name="acao" type="submit" value="Consultar" />
+									<input name="acao" type="reset"  value="Limpar" />
+								</div>						
+							</fieldset>
+							
+							<!-- GRID -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<table id="list" class="scroll ui-corner-all" cellpadding="0" cellspacing="0"></table>
+								<div id="pager" class="scroll" style="text-align:center;"></div>
+							</fieldset>
+							
+							<!-- caixa de dialogo #dialog -->
+							<div id="dialog" title="Informacao"></div>
+							<div id="dialog1" title="Informacao"></div>
+                            
+						</form>							
+					</div>
+					
+					<div id="ie_clearing">&nbsp;</div>
+					<!-- End: IE Column Clearing -->
+				</div>
+				<!-- end: #col2 -->
+			</div>
+			<!-- end: #main -->
+			
+			<!-- begin: #footer -->
+			<div id="footer" class="ui-widget-content ui-corner-bottom" role="contentinfo">			
+				<img src="img/logo_jdl.gif" class="float_left" alt="JDL sistemas" />
+				<span class="center">Todos os direitos reservados.</span>
+			</div>
+			<!-- end: #footer -->
+		</div>
+	</div>
+</body>
+</html>

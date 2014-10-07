@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Camim SCA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	  
+		<!-- (en) Add your meta data here -->
+      
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<!--[if lte IE 7]>
+			<link href="css/patches/patch_2col_left_13.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<script type="text/javascript" src="js/controle/banner.js"></script>
+		<script type="text/javascript" src="js/controle/principal.js"></script>
+		<script type="text/javascript" src="js/controle/planoSaude.js"></script>
+	</head>
+<body>
+						<form id="planoSaude" method="post">						
+
+							<!-- Dados de Plano de Saúde -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+								<legend>Cadastro Plano de Saúde</legend>
+								<div class="grid-12-12">
+									<label>Tipo <em class="form-req">*</em></label>
+									<select id="listaTipoPlanoSaude" name="listaTipoPlanoSaude">
+									</select>
+								</div>								
+								<div class="grid-4-12">
+									<label>Idade Mínima <em class="form-req">*</em></label>							
+									<input name="idadeMinima" type="text" size="2" />									
+								</div>
+                                <div class="grid-4-12">
+									<label>Idade Máxima <em class="form-req">*</em></label>							
+									<input name="idadeMaxima" type="text" size="2" />									
+								</div>
+                                 <div class="grid-4-12">
+									<label>Valor por Faixa Etária <em class="form-req">*</em></label>							
+									R$<input name="valorFaixa" type="text" size="10" />									
+								</div>
+							</fieldset>
+							
+                            <!-- Botões -->
+                            <fieldset class="ui-widget-content ui-corner-all">
+                           		<div class="center">
+									<input name="acao" type="submit" value="Cadastrar" />
+									<input name="acao" type="submit" value="Consultar" />
+                                	<input name="acao" type="submit" value="Alterar" />
+                                	<input name="acao" type="submit" value="Excluir" />
+                                	<input name="acao" type="reset"  value="Limpar" />
+								</div>
+							</fieldset>
+								
+							<!-- caixa de dialogo e pesquisa #dialog #search-dialog -->
+							<div id="dialog" title="Informacao"></div> 
+							<div id="search-dialog" title="Pesquisa">
+								<div id="resultado" class="grid-12-12">
+									<table id="search-list" class="scroll ui-corner-all" cellpadding="0" cellspacing="0"></table>
+									<div id="search-pager" class="scroll" style="text-align:center;"></div>
+								</div>
+							</div>							
+						</form>							
+</body>
+</html>

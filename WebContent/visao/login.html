@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Camim SCA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	  
+		<!-- (en) Add your meta data here -->
+      
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<!--[if lte IE 7]>
+			<link href="css/patches/patch_2col_left_13.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+	  
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/plugin/jquery.ui.js"></script>
+		<script type="text/javascript" src="js/plugin/jquery.validate.js"></script>
+				
+		<script type="text/javascript" src="js/plugin/i18n/jquery-ui-i18n.js"></script>
+		
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.button.js"></script>
+		<script type="text/javascript" src="js/plugin/ui/jquery.ui.dialog.js"></script>
+
+		<script type="text/javascript" src="js/controle/banner.js"></script>
+		<script type="text/javascript" src="js/controle/principal.js"></script>
+	</head>
+<body>
+	<div class="page_margins">
+		<div class="page">
+
+			<!-- cabeçalho #header -->
+			<div id="header" role="banner">
+				<img class="image" src="img/banner.png" alt="Camim SCA" />
+			</div>
+
+			<!-- begin: area que engloba todo conteudo #main --> 
+			<div id="main" class="ui-corner-top">
+
+				<!-- caixa de dialogo #dialog --> 
+				<div id="dialog"></div>	
+			
+				<form id="login" class="center" method="post">
+					<fieldset class="ui-widget-content ui-corner-all">
+						<legend class="ui-widget-header">Login</legend>
+						<div class="grid-12-12">
+							<label for="matricula">Matrícula</label>
+							<input name="matricula" type="text" maxlength="6" size="22" />
+						</div>
+						
+						<div class="grid-12-12">
+							<label for="senha">Senha</label>
+							<input name="senha" type="password" maxlength="8" size="22" />
+						</div>
+						<input type="submit" value="login" />
+					</fieldset>
+				</form>
+			</div>
+			<!-- end: #main -->
+			
+			<!-- begin: rodapé #footer -->
+			<div id="footer" class="ui-widget-content ui-corner-bottom" role="contentinfo">			
+				<img src="img/logo_jdl.gif" class="float_left" alt="JDL sistemas" />
+				<span class="center">Todos os direitos reservados.</span>
+			</div>
+			<!-- end: #footer -->
+		</div>
+	</div>
+</body>
+</html>

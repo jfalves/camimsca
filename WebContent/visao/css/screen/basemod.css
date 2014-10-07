@@ -1,0 +1,79 @@
+﻿@charset "UTF-8";
+
+@media screen, projection
+{
+  body { background: #4d87c7 url("../../img/stripe.png") repeat top left; padding: 10px 0; }
+  body { text-align: center; }
+  
+  .page_margins { text-align:left; margin: 0 auto; }
+  .page_margins { min-width: 780px; max-width: 100em; background: transparent; }
+  .page { padding: 0px; }
+
+  #header {
+	text-align: center;
+    padding: 20px 0em 20px 0em;
+  }
+
+  #main {
+	background: #fff;
+	min-height: 260px;
+    border: 1px #dfd9c3 solid;
+    border-top: 5px #dfd9c3 solid;
+	padding:10px 0;
+  }
+  
+   #col1 {
+   	max-width: 20em;
+   }
+  
+  #toolbar {
+    border-top: 1px #dfd9c3 solid;
+    border-left: 1px #dfd9c3 solid;
+    border-right: 1px #dfd9c3 solid;
+	background: #fff;
+	height: 30px; 
+  }
+  
+  #footer {
+    padding: 10px 20px;
+    border-top: 5px #dfd9c3 solid;
+    line-height: 1.5em;
+  }
+
+  #col1 { width: 25%; }
+  #col1_content { padding: 10px 10px 10px 20px; }
+
+  #col2 { margin-left: 25%; margin-right: 0; }
+  #col2_content { padding: 10px 20px 10px 10px; }
+
+  #footer a { color: #999; background:transparent; font-weight: bold; }
+  #footer a:focus,
+  #footer a:hover,
+  #footer a:active {color: #4D87C7; background-color: transparent; text-decoration:underline; }
+
+  #login {
+   width: 200px;
+  }
+
+  #login label{
+   margin-left: 25px;
+  }
+  
+  #search {
+  	display:inline;
+  	margin: 0.5em 0.3em 0.8em;
+  	vertical-align: middle;
+  	padding: 0.4em 0;
+  	cursor: pointer;
+  }
+  
+  #search span {
+  	margin: 0 0.4em;
+  }
+
+
+  #dialog_link {padding: .4em 5px .4em 20px;text-decoration: none;position: relative; width: 4px; height: 15px;cursor: pointer;}
+  #dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+
+
+}
